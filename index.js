@@ -106,7 +106,7 @@ app.post('/usuarios', function (requisicao, response) {
 
 // CÓDIGO ATUAL (COM BANCO DE DADOS):
 app.put('/usuarios/:nomeParametro', function (requisicao, response) {
-    const nomeParametro = decodeURIComponent(requisição, response)) {
+    const nomeParametro = decodeURIComponent(requisição, response){
         const dadosNovos = requisição.body;
         Usuário.findOneAndUpdate(
             { nome: { $regex: new RwgExp("^" + nomeParametro + "$, "i") } }, 
